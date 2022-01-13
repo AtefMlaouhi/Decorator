@@ -1,18 +1,16 @@
-import { DecoratorClassAddSkills } from '../decorator/class';
-import { ReadOnly } from '../decorator/readOnly';
-import { LogDecorator } from '../decorator/log-decorator';
+import { DecoratorClassAddSkills } from "../decorator/class";
+import { ReadOnly } from "../decorator/readOnly";
+import { LogDecorator } from "../decorator/log-decorator";
 
 export class Ninja {
-    @ReadOnly
-    firstName: string;
-    lastName: string;
+  @ReadOnly
+  firstName: string;
+  lastName: string;
 
-    constructor() {
-    }
+  constructor() {}
 
-    @LogDecorator
-    public functionLog() {
-    }
+  @LogDecorator
+  public functionLog() {}
 }
 
 @DecoratorClassAddSkills

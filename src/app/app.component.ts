@@ -1,16 +1,16 @@
-import { Component } from '@angular/core';
-import { Delay } from './decorator/delay';
-import { Ninja, StrongNinja } from './model/ninja';
-import { IntervallValue } from './decorator/IntervallValue';
-import { LogDecorator } from './decorator/log-decorator';
+import { Component } from "@angular/core";
+import { Delay } from "./decorator/delay";
+import { Ninja, StrongNinja } from "./model/ninja";
+import { IntervallValue } from "./decorator/IntervallValue";
+import { LogDecorator } from "./decorator/log-decorator";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.css"],
 })
 export class AppComponent {
-  title = 'decorator-example';
+  title = "decorator-example";
   increment = 0;
 
   im_ninja: Ninja;
@@ -22,10 +22,10 @@ export class AppComponent {
     this.incrementByOne();
     this.decreaseByOne();
     this.im_ninja = new Ninja();
-    this.im_ninja.lastName = 'Mlaouhi';
+    this.im_ninja.lastName = "Mlaouhi";
     console.log(this.im_ninja);
     this.im_ninja = new StrongNinja();
-    this.im_ninja.lastName = 'Mlaouhi';
+    this.im_ninja.lastName = "Mlaouhi";
     console.log(this.im_ninja);
     this.currentValue = 40;
   }

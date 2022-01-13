@@ -1,9 +1,9 @@
-import 'reflect-metadata';
+import "reflect-metadata";
 
 export function LogDecorator(
-    target: any,
-    propertyKey: string | symbol,
-    descriptor: PropertyDescriptor,
+  target: any,
+  propertyKey: string | symbol,
+  descriptor: PropertyDescriptor
 ) {
-    console.log('I"m a ninja');
+  console.log('I"m a ninja');
 }
